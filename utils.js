@@ -1,4 +1,4 @@
-// Obtenemos el primer dígito de un Entero
+// Obtenemos el {N} dígito de un Entero
 const digitAt = (val, index) => {
     return Math.floor(
         (
