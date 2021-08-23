@@ -1,13 +1,5 @@
-const values = require('./poblacion-municipios.json');
-
-const digitAt = (val, index) => {
-    return Math.floor(
-        (
-            val / Math.pow(10, Math.floor(Math.log(Math.abs(val)) / Math.LN10) - index)
-        )
-        % 10
-    );
-};
+const values = require('./data/poblacion-municipios.json');
+const { digitAt } = require('./utils.js');
 
 let results = {};
 let total = 0;
